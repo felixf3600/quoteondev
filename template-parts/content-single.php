@@ -20,8 +20,9 @@
 			echo '<li>- ';
 			the_title(); 
 			$meta = get_post_meta( get_the_ID(), '_qod_quote_source', TRUE );
+			$meta_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', TRUE );
 			if ($meta):
-				echo " , " . "<a href='" . get_permalink() . "'>" . $meta . "</a>";
+				echo " , " . "<a href='" . $meta_url . "'>" . $meta . "</a>";
 				echo '</li>';
 			endif;?>	
 		</div><!-- .entry-content -->			

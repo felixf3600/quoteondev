@@ -15,9 +15,7 @@
       alert('Success! Comments are closed for this post.');
     });
   });
-})(jQuery);
 
-(function($) {
   $('#more-quotes-button').on('click', function(event) {
     event.preventDefault();
     $.ajax({
@@ -27,21 +25,21 @@
         'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
       success: function(data) {
         let post = data.shift(); // The data is an array of posts. Grab the first one.
-        console.log(post.content);
-        $('#quote-content').html(post.content);
-        $('#quote-title').text(post.title);
-
-        // If the Source is available, use it. Otherwise hide it.
-        if (
-          typeof post.custom_meta !== 'undefined' &&
-          typeof post.custom_meta.Source !== 'undefined'
-        ) {
-          $('#quote-source').html('Source:' + post.custom_meta.Source);
+        $('#quote-content').html(post.content.rendered);
+        if (post._qod_quote_source) {
+          $('#quote-title').html(
+            post.title.rendered +
+              "<a id='quote-title' href='" +
+              post._qod_quote_source_url +
+              "'> , " +
+              post._qod_quote_source +
+              '</a>'
+          );
         } else {
-          $('#quote-source').text('');
+          $('#quote-title').html(post.title.rendered);
         }
       },
       cache: false
-    }).done();
+    });
   });
 })(jQuery);
