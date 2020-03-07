@@ -1,68 +1,138 @@
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-
+html,
+.site,
 body,
 button,
 input,
 select,
 textarea {
-	color: $color__text-main;
-	font-family: $font__main;
-	font-size: 1rem;
-	line-height: $font__line-height-body;
+  background-color: $color__background-main !important;
+  color: $color__background-body;
+  font-family: $font__main;
+  font-size: 1rem;
+  line-height: $font__line-height-body;
 }
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
 }
-
+h1 {
+  font-size: 3rem;
+}
+i {
+  color: rgb(255, 187, 0);
+}
 /* Copy */
 
-p {
-	margin-bottom: $base__space-unit;
+p,
+a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
-dfn, cite, em, i {
-	font-style: italic;
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
 }
 
 blockquote {
-	margin: 0 $base__space-unit;
+  margin: 0 $base__space-unit;
 }
 
 address {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 }
 
 pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	font-size: .9375rem;
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6rem;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6rem;
+  background: $color__background-pre;
+  font-family: $font__pre;
+  font-size: 0.9375rem;
+  line-height: $font__line-height-pre;
+  margin-bottom: 1.6rem;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6rem;
 }
 
-code, kbd, tt, var {
-	font-family: $font__code;
-	font-size: .9375rem;
+code,
+kbd,
+tt,
+var {
+  font-family: $font__code;
+  font-size: 0.9375rem;
 }
 
-abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
-	cursor: help;
+abbr,
+acronym {
+  border-bottom: 1px dotted $color__border-abbr;
+  cursor: help;
 }
 
-mark, ins {
-	background: $color__background-ins;
-	text-decoration: none;
+mark,
+ins {
+  background: $color__background-ins;
+  text-decoration: none;
 }
 
 big {
-	font-size: 125%;
+  font-size: 125%;
+}
+.site-header,
+.site-footer,
+.site-info,
+.site-main {
+  a {
+    color: $color__brand-green;
+    text-emphasis: none;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    p {
+      color: $color__brand-green;
+
+      text-emphasis: none;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+    h1 {
+      text-emphasis: none;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+    img {
+      width: 400px;
+      height: 100px;
+      object-fit: contain;
+    }
+    &:visited {
+      color: $color__brand-green;
+      p {
+        color: $color__brand-green;
+      }
+    }
+  }
+}
+
+button {
+  border: $border__solid-green !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  margin-top: 50px;
+  padding: 10px;
+  color: $color__brand-green !important;
+}
+li,
+ul {
+  list-style-type: none;
 }

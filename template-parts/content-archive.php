@@ -9,8 +9,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-	<div class="entry-content">
-	<?php 				
+	<div class="quotes">
+		<div class="entry-content">
+			<?php 				
 			echo '<li>';
 			the_content();
 			echo '</li>';
@@ -21,8 +22,10 @@
 				echo " , " . "<a href='" . get_permalink() . "'>" . $meta . "</a>";
 				echo '</li>';
 
-	endif;?>	
-	</div><!-- .entry-content -->
-	</header><!-- .entry-header -->
+			endif;?>	
+		</div>
+		</div>	
+		</header><!-- .entry-header -->
 
+	<!-- <div class="entry-summary">	</div>.entry-summary -->
 </article><!-- #post-## -->
