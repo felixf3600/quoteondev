@@ -22,7 +22,7 @@ function qod_register_metaboxes() {
 	$quote_meta = new_cmb2_box( array(
 		'id'            => $prefix . 'quote_metabox',
 		'title'         => 'Quotes Meta',
-		'object_types'  => array( 'post', ), // Post type
+		'object_types'  => array( 'post', ), // Post type _qod_quote_metabox
 		'context'    => 'normal',
 		'priority'   => 'high',
 		'show_names' => true, // Show field names on the left

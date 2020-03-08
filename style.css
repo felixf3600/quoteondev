@@ -713,6 +713,26 @@ a {
 .site {
   padding: 20px; }
 
+.submit-form input {
+  border: 1px solid #00cc00 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  text-shadow: none !important;
+  color: #00cc00 !important; }
+
+.submit-form .author-field {
+  width: 100px; }
+
+.submit-form .quote-field {
+  width: 500px;
+  height: 200px; }
+
+.submit-form .book-field {
+  width: 100px; }
+
+.submit-form .url-field {
+  width: 100px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

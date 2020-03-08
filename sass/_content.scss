@@ -69,3 +69,24 @@
 .site {
   padding: 20px;
 }
+.submit-form {
+  input {
+    border: $border__solid-green !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: $color__brand-green !important;
+  }
+  .author-field {
+    width: 100px;
+  }
+  .quote-field {
+    width: 500px;
+    height: 200px;
+  }
+  .book-field {
+    width: 100px;
+  }
+  .url-field {
+    width: 100px;
+  }
+}
