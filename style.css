@@ -279,7 +279,7 @@ i {
 /* Copy */
 p,
 a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 1rem; }
 
 dfn,
@@ -377,6 +377,8 @@ button {
   margin-top: 50px;
   padding: 10px;
   color: #00cc00 !important; }
+  button i {
+    color: #00cc00; }
 
 li,
 ul {
@@ -677,6 +679,31 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.site-info {
+  padding-top: 150px; }
+  @media (min-width: 800px) {
+    .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      text-align: center;
+      margin: 0 0 auto; } }
+  @media (min-width: 800px) {
+    .site-info .red-academy {
+      padding-left: 1.5rem;
+      margin: 0 0 auto; }
+      .site-info .red-academy p {
+        margin-top: 0; } }
+  @media (min-width: 1080px) {
+    .site-info {
+      -webkit-box-pack: right;
+          -ms-flex-pack: right;
+              justify-content: right; } }
+
 .navigation-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -688,6 +715,9 @@ a {
   text-align: center; }
   .navigation-container .page-navigation:last-child {
     border-right: none; }
+    @media (min-width: 800px) {
+      .navigation-container .page-navigation:last-child {
+        border-right: 1px solid #ffffff; } }
   .navigation-container .page-navigation {
     border-right: 1px solid #ffffff;
     padding-left: 1.5rem;
@@ -696,12 +726,44 @@ a {
     .navigation-container .page-navigation p,
     .navigation-container .page-navigation a {
       margin: 0; }
+  .navigation-container .page-navigation:first-child {
+    padding-left: 0; }
+  @media (min-width: 800px) {
+    .navigation-container {
+      width: auto; } }
 
-.site-info {
-  padding-top: 150px; }
+i {
+  color: #00cc00; }
 
-.red-academy {
-  padding-left: 1.5rem; }
+@media (min-width: 1080px) {
+  .site-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.quote-marks {
+  width: 150px;
+  display: none; }
+  @media (min-width: 1080px) {
+    .quote-marks {
+      display: inline-block;
+      font-size: 8rem; } }
+
+@media (min-width: 1080px) {
+  .content-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1080px; } }
+
+.site-main {
+  width: 100%; }
+  @media (min-width: 800px) {
+    .site-main {
+      max-width: 780px; } }
 
 .archive .entry-content {
   padding: 2rem;
@@ -710,28 +772,55 @@ a {
 .archive .page-header {
   border-bottom: 1px dashed #ffffff; }
 
-.site {
-  padding: 20px; }
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.submit-form input {
+.site {
+  padding: 20px;
+  max-width: 1080px; }
+  @media (min-width: 1080px) {
+    .site {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-line-pack: center;
+          align-content: center; } }
+
+.submit-form input,
+.submit-form textarea,
+.search-form input,
+.search-form textarea {
   border: 1px solid #00cc00 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   text-shadow: none !important;
   color: #00cc00 !important; }
 
-.submit-form .author-field {
-  width: 100px; }
+.submit-form .author-field,
+.search-form .author-field {
+  width: 300px; }
 
-.submit-form .quote-field {
+.submit-form .quote-field,
+.search-form .quote-field {
   width: 500px;
   height: 200px; }
 
-.submit-form .book-field {
-  width: 100px; }
+.submit-form .book-field,
+.search-form .book-field {
+  width: 300px; }
 
-.submit-form .url-field {
-  width: 100px; }
+.submit-form .url-field,
+.search-form .url-field {
+  width: 300px; }
 
 /*--------------------------------------------------------------
 # Media

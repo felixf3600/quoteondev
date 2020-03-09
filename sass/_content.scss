@@ -31,6 +31,27 @@
   clear: both;
   margin: 0 0 $base__space-unit;
 }
+.site-info {
+  padding-top: 150px;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 0 auto;
+  }
+  .red-academy {
+    @include tablet {
+      padding-left: 1.5rem;
+      margin: 0 0 auto;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+  @include desktop {
+    justify-content: right;
+  }
+}
 
 .navigation-container {
   display: flex;
@@ -38,6 +59,9 @@
   text-align: center;
   .page-navigation:last-child {
     border-right: none;
+    @include tablet {
+      border-right: $border__solid-white;
+    }
   }
   .page-navigation {
     p,
@@ -49,12 +73,43 @@
     padding-right: 1.5rem;
     margin: 0 0 auto;
   }
+  .page-navigation:first-child {
+    padding-left: 0;
+  }
+  @include tablet {
+    width: auto;
+  }
 }
-.site-info {
-  padding-top: 150px;
+i {
+  color: $color__brand-green;
 }
-.red-academy {
-  padding-left: 1.5rem;
+
+.site-header {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.quote-marks {
+  width: $width__quotes;
+  display: none;
+  @include desktop {
+    display: inline-block;
+    font-size: 8rem;
+  }
+}
+.content-area {
+  @include desktop {
+    display: flex;
+    width: $width__max;
+  }
+}
+.site-main {
+  width: 100%;
+  @include tablet {
+    max-width: $width__max - (2 * $width__quotes);
+  }
 }
 
 .archive {
@@ -66,27 +121,40 @@
     border-bottom: $border__dashed-white;
   }
 }
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .site {
   padding: 20px;
+  max-width: $width__max;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
-.submit-form {
-  input {
+.submit-form,
+.search-form {
+  input,
+  textarea {
     border: $border__solid-green !important;
     box-shadow: none !important;
     text-shadow: none !important;
     color: $color__brand-green !important;
   }
   .author-field {
-    width: 100px;
+    width: 300px;
   }
   .quote-field {
     width: 500px;
     height: 200px;
   }
   .book-field {
-    width: 100px;
+    width: 300px;
   }
   .url-field {
-    width: 100px;
+    width: 300px;
   }
 }

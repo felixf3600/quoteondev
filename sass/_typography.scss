@@ -35,7 +35,7 @@ i {
 
 p,
 a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 1rem;
 }
 
@@ -131,6 +131,9 @@ button {
   margin-top: 50px;
   padding: 10px;
   color: $color__brand-green !important;
+  i {
+    color: $color__brand-green;
+  }
 }
 li,
 ul {

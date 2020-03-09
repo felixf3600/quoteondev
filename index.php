@@ -8,6 +8,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+	<div class= "quote-marks">
+		 	<i class="fas fa-quote-left"></i>
+		</div>	
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -34,6 +37,9 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+		<div class= "quote-marks">
+			<i class="fas fa-quote-right"></i>
+		</div>	
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

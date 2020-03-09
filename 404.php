@@ -10,6 +10,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<div class= "quote-marks">
+		 	<i class="fas fa-quote-left"></i>
+		</div>	
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
@@ -25,6 +28,9 @@ get_header(); ?>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+		<div class= "quote-marks">
+			<i class="fas fa-quote-right"></i>
+		</div>	
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

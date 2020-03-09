@@ -27,8 +27,5 @@
 			<h2>Not Found</h2>
 		<?php endif; ?>
 		</div>
-		<div >
-			<button id="more-quotes-button" class="more-quotes-button" action="">Show Me Another!</button>
-		</div> 	
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

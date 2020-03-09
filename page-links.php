@@ -8,7 +8,10 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class= "quote-marks">
+		 	<i class="fas fa-quote-left"></i>
+		</div>	
+	<main id="main" class="site-main" role="main">
 			<h1>Archives</h1>
 			<h2>Quote Authors</h2>
 			<?php $queryAuthor = new WP_Query( array ( 'orderby' => 'title', 'order' => 'ASC' ,'posts_per_page' => '-1' ) );?>
@@ -34,6 +37,9 @@ get_header(); ?>
 
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+		<div class= "quote-marks">
+			<i class="fas fa-quote-right"></i>
+		</div>	
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

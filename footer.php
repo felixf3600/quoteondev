@@ -13,7 +13,7 @@
 				<div class="site-info">
 					<div class="navigation-container">
 						<div class="page-navigation">
-							<a href="<?php echo get_site_url();?>/about-page/"><p>About</p></a>
+							<a href="<?php echo get_site_url();?>/about/"><p>About</p></a>
 						</div>
 						<div class="page-navigation">
 							<a href="<?php echo get_site_url();?>/links/"><p>Archives</p></a>

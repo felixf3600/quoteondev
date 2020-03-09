@@ -8,7 +8,10 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class= "quote-marks">
+		 	<i class="fas fa-quote-left"></i>
+		</div>	
+	<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -17,6 +20,9 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+		<div class= "quote-marks">
+			<i class="fas fa-quote-right"></i>
+		</div>	
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
