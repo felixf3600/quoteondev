@@ -1,24 +1,17 @@
-# Quotes on Dev Starter
+# Quotes on Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+A wordpress site that will show single quotes. It has an option for you to put in your own quotes as well as a button to randomly show you one.
 
-## Installation
+## technologies used
 
-### 1. Download me (don't clone me!)
+This wordpress site uses wordpress as a starting point. Using CSS to style the pages and Ajax to get and post results. The Javascript is done with Jquery.
 
-Then add me to your `wp-content/themes` directory.
+## difficulties encountered
 
-### 2. Rename the `quotesondev-starter-master` directory
+I had 3 major challenges with this project.
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+1 Although, i am familiar with jquery, I am not well versed on it so trying to understand some things online as I search for ways to finish the project was a bit hard.
 
-### 3. Install the dev dependencies
+2. I had issues trying to fetch informartion using the filter parameter with REST API. I had to install a plug in call WP REST FILTER to try and fix the issue.
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
-# quoteondev
+3. I got confused with the metabox and the REST API and I thought I had to combine them somehow. LOL
